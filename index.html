@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__background">
+        <div class="header__inner">
+          <div class="header__title">
+            <div class="header__logo">
+              <!-- <img src="" alt="Mazu logo" /> -->
+            </div>
+            <div class="header__name">
+              <h1>Mazu</h1>
+            </div>
+          </div>
+          <div class="header__buttons">
+            <div class="header__btn"><a href="#projects">Работы</a></div>
+            <div class="header__btn"><a href="#contacts">Связь</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="info">
+      <div class="container">
+        <h1>Что такое вёрстка?</h1>
+        <div class="info__text">
+          <span style="font-weight: bold">Вёрстка веб-страниц</span> – создание
+          структуры гипертекстового документа на основе HTML-разметки, как
+          правило, при использовании таблиц стилей и клиентских сценариев, таким
+          образом, чтобы элементы дизайна выглядели аналогично макету. Вёрстка
+          веб-страниц отличается от полиграфической тем, что необходимо
+          учитывать разницу отображения элементов в различных браузерах и
+          разницу в размерах рабочего пространства устройств. Процесс сложен и
+          имеет творческую основу, ни один из способов не является каноничным и
+          принятым как основа. Все подходы к вёрстке имеют как преимущества, так
+          и недостатки. Работы по вёрстке сайта могут быть включены в этап
+          сборки сайта.
+        </div>
+
+        <div class="photo__blocks">
+          <div class="photo__block">
+            <h2>Кроссбраузерная вёрстка</h2>
+            <div class="ico">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30%"
+                height="30%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-globe"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
+            </div>
+            <p>Одинаковое отображение элементов в разных браузерах</p>
+          </div>
+          <div class="photo__block">
+            <h2>Вёрстка с помощью Flex</h2>
+            <div class="ico">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30%"
+                height="30%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-sliders"
+              >
+                <line x1="4" y1="21" x2="4" y2="14"></line>
+                <line x1="4" y1="10" x2="4" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="3"></line>
+                <line x1="20" y1="21" x2="20" y2="16"></line>
+                <line x1="20" y1="12" x2="20" y2="3"></line>
+                <line x1="1" y1="14" x2="7" y2="14"></line>
+                <line x1="9" y1="8" x2="15" y2="8"></line>
+                <line x1="17" y1="16" x2="23" y2="16"></line>
+              </svg>
+            </div>
+            <p>
+              CSS Flexbox модуль макета гибкого контейнера. Flex позволяет
+              контролировать размеры, порядок и выравнивание элементов по разным
+              осям
+            </p>
+          </div>
+          <div class="photo__block">
+            <h2>Адаптивная вёрстка</h2>
+            <div class="ico">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30%"
+                height="30%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-smartphone"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <p>
+              Адаптация под разные разрешение экрана, так как принимаются
+              медиа-запросы, которые и определяют стили для конкретных
+              разрешение
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="bold__line"></div>
+
+    <section id="skills">
+      <div class="container">
+        <div class="skills__dots">
+          <div class="skills__dots-box">
+            <div class="skills__dots-item">
+              <div class="dots-item__img"><img src="assets/img/html.svg" alt="html"></div>
+              <div class="dots-item__title">HTML</div>
+            </div>
+          </div>
+          <div class="skills__dots-box">
+            <div class="skills__dots-item">
+              <div class="dots-item__img"><img src="assets/img/css-3.svg" alt="CSS"></div>
+              <div class="dots-item__title">CSS</div>
+            </div>
+          </div>
+          <div class="skills__dots-box">
+            <div class="skills__dots-item">
+              <div class="dots-item__img"><img src="assets/img/javascript.svg" alt="javascript"></div>
+              <div class="dots-item__title">JavaScript</div>
+            </div>
+          </div>
+          <div class="skills__dots-box">
+            <div class="skills__dots-item">
+              <div class="dots-item__img"><img src="assets/img/wordpress.svg" alt="wordpress"></div>
+              <div class="dots-item__title">wordpress</div>
+            </div>
+          </div>
+          <div class="skills__dots-box">
+            <div class="skills__dots-item">
+              <div class="dots-item__img"><img src="assets/img/figma.svg" alt="figma"></div>
+              <div class="dots-item__title">figma</div>
+            </div>
+          </div>
+          <div class="skills__dots-box">
+            <div class="skills__dots-item">
+              <div class="dots-item__img"><img src="assets/img/photoshop.svg" alt="photoshop"></div>
+              <div class="dots-item__title">photoshop</div>
+            </div>
+          </div>
+          
+          
+        </div>
+
+        <div class="skills__slider">
+            <div class="slider__item">
+              <div class="slider__title"><h2>HTML</h2></div>
+              <div class="slider__ico"><img src="assets/img/html.svg" alt="html"></div>
+              <div class="slider__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вопрос агентство грустный до толку свой вопроса вскоре заманивший, строчка, своих проектах имени не правилами подзаголовок однажды над пунктуация рукопись.</div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__title"><h2>CSS</h2></div>
+              <div class="slider__ico"><img src="assets/img/css-3.svg" alt="html"></div>
+              <div class="slider__description">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Пор, коварный. Своих над коварный мир переулка языкового дал залетают буквенных всемогущая, снова обеспечивает имеет запятой живет! Вдали, продолжил инициал!</div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__title"><h2>JavaScript</h2></div>
+              <div class="slider__ico"><img src="assets/img/javascript.svg" alt="html"></div>
+              <div class="slider__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ведущими путь послушавшись грустный о одна. Моей, над. Большого грамматики моей коварных ты раз оксмокс, родного несколько правилами возвращайся это.
+              Напоивший подзаголовок которой образ проектах. Грамматики но речью образ осталось, точках оксмокс решила вскоре имеет его это дал прямо правилами. Своего рыбными власти пунктуация. Она речью деревни продолжил ему рукописи?</div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__title"><h2>wordpress</h2></div>
+              <div class="slider__ico"><img src="assets/img/wordpress.svg" alt="html"></div>
+              <div class="slider__description">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Пор, коварный. Своих над коварный мир переулка языкового дал залетают буквенных всемогущая, снова обеспечивает имеет запятой живет! Вдали, продолжил инициал!</div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__title"><h2>figma</h2></div>
+              <div class="slider__ico"><img src="assets/img/figma.svg" alt="html"></div>
+              <div class="slider__description">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Пор, коварный. Своих над коварный мир переулка языкового дал залетают буквенных всемогущая, снова обеспечивает имеет запятой живет! Вдали, продолжил инициал!</div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__title"><h2>photoshop</h2></div>
+              <div class="slider__ico"><img src="assets/img/photoshop.svg" alt="html"></div>
+              <div class="slider__description">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Пор, коварный. Своих над коварный мир переулка языкового дал залетают буквенных всемогущая, снова обеспечивает имеет запятой живет! Вдали, продолжил инициал!</div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bold__line"></div>
+
+    <section id="projects">
+      <div class="container">
+        <div class="projects__inner">
+          <div class="projects__project">
+            <div class="projects__project__title"><h2>Сайт визитка</h2></div>
+            <div class="projects__project__view"><img src="assets\img\project__port.png" alt="project_port.png"></div>
+          </div>
+          <div class="projects__project" hidden>
+            <div class="projects__project__title"><h2>Сайт визитка</h2></div>
+            <div class="projects__project__view"><img src="assets\img\project__port.png" alt="project_port.png"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <div class="contacts__inner">
+        <form class="contacts__input">
+          <h2>Свяжитесь со мной</h2>
+          <input type="email" name="email" id="email" placeholder="Здесь введите свой email">
+          <textarea type="text" name="text" id="" placeholder="Здесь напечатайте абзацы своего текста">Здравствуйте! Мне нужна вёрстка по макету...</textarea>
+          <button type="button"">Отправить</button>
+        </form>
+        <div class="contacts__other">
+          <h2>Ещё способы связаться со мной</h2>
+          <div class="contacts__contact">Моя почта: <a href = "mailto:zaskok20@yandex.ru">zaskok20@yandex.ru</a></div>
+          <div class="contacts__contact"><a href="https://t.me/MazuSad" target="_blank" rel="noopener noreferrer">Telegram</a></div>
+          <div class="contacts__contact"><a href="http://vk.com/dimitry_i" target="_blank" rel="noopener noreferrer">Vk</a></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner">
+          <div class="cop">
+          Moskow. 2020-<script type="text/javascript">dt = new Date();document.write(dt.getFullYear());</script>.<br />
+          Копирование материалов с сайта не желательно :)
+        </div>
+      </div>
+    </footer>
+
+      <!-- scripts -->
+<link rel="stylesheet" href="assets/js/slick/slick.css">
+<link rel="stylesheet" href="assets/js/slick/slick-theme.css">
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/slick/slick.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </body>
+</html>
