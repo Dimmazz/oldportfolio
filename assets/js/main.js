@@ -22,6 +22,7 @@ $(function() {
     dots: false,
     slidesToShow: 6,
     slidesToScroll: 6,
+    FocusOnSelect: true,
     // centerMode: true,
     asNavFor: '.skills__slider'
   })
