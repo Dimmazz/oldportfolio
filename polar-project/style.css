@@ -1,0 +1,144 @@
+* {
+  font-family: 'Roboto', sans-serif !important;
+  font-family: serif;
+  text-decoration: none;
+  user-select: none;
+  outline: none !important;
+
+   /* for IE */
+  -ms-user-select: none;
+
+  /* Для мозилы */
+  -moz-user-select: none;
+
+  /*  Для конкверора */
+  -khtml-user-select: none;
+
+  /* Для Сафари и Хрома*/
+  -webkit-user-select: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&family=Roboto&display=swap');
+
+button {
+  border: 0;
+}
+
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background: hsla(341, 57%, 88%, 0.333);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 48px
+}
+
+.header__menu {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #150101;
+  opacity: 0.6;
+}
+
+.header__menu ol {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu__first {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #D23166;
+  font-size: 16;
+}
+
+.header__menu ol > li + li {
+  margin-left: 42px;
+}
+
+.header__menu ol > li:hover {
+  color: #D23166;
+  font-size: 16;
+  transition: .2s;
+}
+
+button {
+  color: #fff;
+  background: #D23166;
+  /* font-family: Hind Madurai; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 14px 50px;
+  border-radius: 5px;
+}
+
+.header__content .left__column {
+  width: 40%;
+  float: left;
+}
+
+.header__content .left__column__title__bt {
+  margin: 35px 0 6px 0;
+}
+
+.header__content .right__column {
+  /* float: left; */
+  position: relative;
+}
+
+.icecream__effect {
+  transform: rotate(4deg);
+  position: absolute;
+  top: 124px;
+  right: 30px; 
+}
+
+.icecream__img {
+  position: absolute;
+  right: 114px;
+}
+
+.icecream__bg {
+  position: absolute;
+  top: 224px;
+  right: 230px;
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 425px) {
+  
+}

@@ -2,7 +2,7 @@ $(function() {
 
       // Главный слайдер с контентом
   $('.skills__slider').slick({
-    Infinity: true,
+    infinity: true,
     dots: false,
     arrows: false,
     asNavFor: '.skills__dots',
@@ -17,13 +17,12 @@ $(function() {
 
       // Доп слайдер для главного 
   $('.skills__dots').slick({
-    Infinity: true,
+    infinity: true,
     arrows: false,
     dots: false,
     slidesToShow: 6,
     slidesToScroll: 6,
-    FocusOnSelect: true,
-    // centerMode: true,
+    focusOnSelect: true,
     asNavFor: '.skills__slider'
   })
 })

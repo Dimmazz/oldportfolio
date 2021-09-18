@@ -230,6 +230,7 @@ section {
   padding: 5px 10px;
   border-radius: 10px;
   border: 1px solid #1f1f1f;
+  cursor: pointer;
   /* width: 100%;
   max-width: 150px; */
 }
@@ -271,6 +272,7 @@ section {
   height: 100%;
   padding: 20px 30px;
   color: #ececec;
+  border-radius: 4px;
   z-index: 2;
 }
 
@@ -311,14 +313,92 @@ section {
 
   /* section projects */
 
-section[id="contacts"] {
-  margin-bottom: 0;
+.projects-box {
+  padding: 0 10px;
+  margin-bottom: 10px;
 }
 
-  .projects__inner {
-    display: flex;
-    justify-content: space-between;
-  }
+.projects-box__inner {
+  width: 300px;
+  height: 396px;
+  border-radius: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background-color: #000;
+  position: relative;
+}
+
+.projects-view {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.projects-box img {
+  width: 296px;
+  height: 392px;
+  object-fit: cover;
+  object-position: 0 0;
+  border-radius: 40px;
+  transition: .4s;
+}
+
+.projects-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  color: #ececec;
+  display: none;
+  transition: all .8s;
+}
+
+.projects-hover__title {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.projects-hover__btn {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.projects-hover__btn a {
+  padding: 10px 15px 10px 0;
+  border-radius: 8px;
+}
+
+.projects-hover__btn a:hover {
+  background-color: #000000ec;
+}
+
+.projects-hover__btn span {
+  background-color: #046801;
+  padding: 10px 15px;
+  border-radius: 8px 0 0 8px;
+}
+
+.projects-box__inner:hover .projects-hover {
+  display: block;
+}
+
+/* .projects-box__inner:hover img {
+  transform: scale(1.1);
+} */
+
+.projects__inner {
+  display: flex;
+  justify-content: space-between;
+}
 
 .projects__project {
   width: 300px;
@@ -514,7 +594,7 @@ section[id="contacts"] {
   .header__inner {
     max-width: 400px;
   }
-/* temporary comment */
+
   .container {
     width: 96%;
     margin: 0 2%;
