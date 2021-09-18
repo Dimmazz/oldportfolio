@@ -26,8 +26,4 @@ $(function() {
     // centerMode: true,
     asNavFor: '.skills__slider'
   })
-
-      // Форма отправки обратной связи
-  
-
 })
