@@ -1,28 +1,50 @@
-* {
-  font-family: 'Roboto', sans-serif !important;
-  font-family: serif;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@400;600&family=Roboto:wght@400;500;700&display=swap');
+
+/* 
+font-family: 'Fredoka One', cursive;
+font-family: 'Hind Madurai', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+html {
+  box-sizing: border-box;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   text-decoration: none;
   user-select: none;
   outline: none !important;
-d
-   /* for IE */
+  
+  /* for IE */
   -ms-user-select: none;
-
   /* Для мозилы */
   -moz-user-select: none;
-
   /*  Для конкверора */
   -khtml-user-select: none;
-
   /* Для Сафари и Хрома*/
   -webkit-user-select: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&family=Roboto&display=swap');
+* {
+  box-sizing: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+  user-select: inherit;
+  outline: inherit;
 
-button {
-  border: 0;
+   /* for IE */
+  -ms-user-select: inherit;
+  /* Для мозилы */
+  -moz-user-select: inherit;
+  /*  Для конкверора */
+  -khtml-user-select: inherit;
+  /* Для Сафари и Хрома*/
+  -webkit-user-select: inherit;
 }
+
+
 
 ol {
   list-style: none;
@@ -30,15 +52,34 @@ ol {
 
 a {
   color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 .container {
   width: 80%;
-  margin: 0 10%;
+  margin: 0 auto;
+  max-width: 1125px;
 }
+
+.btn {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  background: #D23166;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 14px 50px;
+  border-radius: 5px;
+}
+
 
 .header {
   height: 100vh;
+  min-height: 862px;
+  max-height: 900px;
   width: 100%;
   background: hsla(341, 57%, 88%, 0.333);
 }
@@ -47,6 +88,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 200px;
 }
 
 .header__logo {
@@ -60,6 +102,7 @@ a {
   line-height: 16px;
   color: #150101;
   opacity: 0.6;
+  text-transform: capitalize;
 }
 
 .header__menu ol {
@@ -67,17 +110,15 @@ a {
   align-items: center;
 }
 
-.header__menu__first {
+.header__menu--active {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 700;
   line-height: 18px;
   color: #D23166;
-  font-size: 16;
+  font-size: 16px;
 }
 
-.header__menu ol > li + li {
+.header__menu li + li {
   margin-left: 42px;
 }
 
@@ -87,49 +128,273 @@ a {
   transition: .2s;
 }
 
-button {
+.header-btn {
   color: #fff;
+  font-weight: 700;
   background: #D23166;
-  /* font-family: Hind Madurai; */
+  border: none;
   font-style: normal;
-  font-weight: bold;
   font-size: 16px;
   line-height: 22px;
   padding: 14px 50px;
   border-radius: 5px;
 }
 
-.header__content .left__column {
-  width: 40%;
-  float: left;
-}
-
-.header__content .left__column__title__bt {
-  margin: 35px 0 6px 0;
-}
-
-.header__content .right__column {
-  /* float: left; */
+.header-content {
+  display: flex;
   position: relative;
 }
 
-.icecream__effect {
-  transform: rotate(4deg);
-  position: absolute;
-  top: 124px;
-  right: 30px; 
+.header-content__text {
+  /* max-width: 55%; */
+  width: 665px;
 }
 
-.icecream__img {
-  position: absolute;
-  right: 114px;
+.header-text__suptitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  padding-bottom: 6px;
 }
 
-.icecream__bg {
-  position: absolute;
-  top: 224px;
-  right: 230px;
+.header-text__title {
+  font-family: 'Fredoka One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 57.33px;
+  line-height: 69px;
+  padding-bottom: 35px;
 }
+
+.header-text__title span {
+  color: #D23166;
+}
+
+.header-text__description {
+  color: #0F0101;
+  opacity: 0.6;
+  font-size: 18px;
+  line-height: 27px;
+  max-width: 525px;
+  padding-bottom: 50px;
+}
+
+.header-content__images {
+  /* max-width: 600px; */
+  position: relative;
+}
+
+.header-content__images-icecream {
+  position: absolute;
+  top: -180px;
+  left: 0;
+  width: 597px;
+  height: 597px;
+}
+
+.header-content__images-img {
+  position: absolute;
+  top: -50px;
+  left: -149px;
+  width: 851.86px;
+  height: 548.1px;
+}
+
+.header-content__images-bg {
+  content: "";
+  background: url('layout/img/Ellipse 18.png');
+  width: 365px;
+  height: 353px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+  /* Delivery section */
+
+.delivery {
+  background-color: #fff;
+}
+
+.delivery__inner {
+  height: 340px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delivery__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 200px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+  border-radius: 7px;
+}
+
+.delivery__box-img {
+  margin: 0 auto;
+  width: 32px;
+}
+
+.delivery__box-title {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.delivery__box-text {
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.6;
+}
+
+  /* see details section */
+
+.details {
+  height: 545px;
+  background-color: #F8EDF0;
+}
+
+.details__inner {
+  display: flex;
+  position: relative;
+}
+
+.details-text {
+  padding-top: 140px;
+}
+
+.details-text__title {
+  max-width: 350px;
+  font-weight: 600;
+  font-size: 44.2px;
+  line-height: 49px;
+  color: #150101;
+  padding-bottom: 16px;
+}
+
+.details-text__description {
+  color: #0F0101;
+  opacity: 0.6;
+  max-width: 442px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 35px;
+}
+
+.details-img {
+  position: absolute;
+  right: 0;
+  top: -85px;
+  width: 655px;
+  height: 655px;
+}
+
+    /* app section */
+
+.app {
+  height: 670px;
+  background-color: #F8EDF0;
+  border: 10px solid gray;
+}
+
+.app__inner {
+  display: flex;
+  position: relative;
+}
+
+.app-text {
+  position: absolute;
+  right: 0;
+  padding-top: 90px;
+}
+
+.app-text__title {
+  font-family: 'Roboto', sans-serif;
+  max-width: 620px;
+  font-weight: 500;
+  font-size: 44.2px;
+  line-height: 52px;
+  color: #000;
+  padding-bottom: 21px;
+}
+
+.app-text__description {
+  color: #0F0101;
+  opacity: 0.7;
+  max-width: 607px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  padding-bottom: 31px;
+}
+
+.app-text_ad-app {
+  padding-bottom: 41px;
+}
+
+.ad-app__item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.ad-app_item-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.ad-app__item-ico {
+  display: inline-block;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.ad-app__item-ico img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app-text_app-download {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+
+.app-img {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: 305px;
+  height: 627px;
+}
+
+
 
 @media screen and (max-width: 1024px) {
   
