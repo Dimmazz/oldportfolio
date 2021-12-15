@@ -2,6 +2,11 @@ $(function() {
 
       // Главный слайдер с контентом
   $('.skills__slider').slick({
+    accessibility: false,
+    draggable: false,
+    swipe: false,
+    fade: true,
+    speed: 250,
     infinity: true,
     dots: false,
     arrows: false,
@@ -18,6 +23,7 @@ $(function() {
       // Доп слайдер для главного 
   $('.skills__dots').slick({
     infinity: true,
+    speed: 300,
     arrows: false,
     dots: false,
     slidesToShow: 6,
@@ -25,4 +31,5 @@ $(function() {
     focusOnSelect: true,
     asNavFor: '.skills__slider'
   })
+
 })

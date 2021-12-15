@@ -195,6 +195,7 @@ section {
 }
 
 .photo__block h2 {
+  min-height: 64.88px;
   color: #edf5eb;
   font-family: "Tahoma", Impact, "Arial Narrow Bold", sans-serif;
   font-size: 1.6em;
@@ -561,6 +562,12 @@ section {
   padding: 10px 0;
   width: 80%;
 }
+#projects:before {
+	display: block;
+	content: "";
+	height: 77px;
+	margin: -77px 0 0;
+}
 
 ::-webkit-input-placeholder { /* WebKit browsers */ 
   color: #cfcfcf;
@@ -612,6 +619,7 @@ section {
 
   .photo__block + .photo__block {
     margin-left: 5px;
+    margin-top: 5px;
   }
 
   .header__name,
@@ -652,6 +660,10 @@ section {
 
   .skills__dots {
     display: none !important;
+  }
+
+  .footer{
+    height: 100px;
   }
 
 }
