@@ -522,7 +522,8 @@ section {
   border: 2px solid black;
   background-color: #046801d0; 
   padding: 20px 10px;
-  cursor: pointer;
+  cursor: no-drop;
+  opacity: 0.8;
 }
 
 .contacts__other {
