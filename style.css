@@ -319,6 +319,11 @@ section {
   margin-bottom: 10px;
 }
 
+.projects-block {
+  opacity: 0.7;
+  cursor: no-drop;
+}
+
 .projects-box__inner {
   width: 300px;
   height: 396px;
@@ -326,6 +331,7 @@ section {
   border: 2px solid rgba(0, 0, 0, 0.5);
   background-color: #000;
   position: relative;
+  box-shadow: 10px 8px 6px rgb(0 0 0 / 50%)
 }
 
 .projects-view {
@@ -569,7 +575,6 @@ section {
 	height: 77px;
 	margin: -77px 0 0;
 }
-
 ::-webkit-input-placeholder { /* WebKit browsers */ 
   color: #cfcfcf;
 }
