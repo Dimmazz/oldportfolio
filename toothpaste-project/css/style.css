@@ -80,6 +80,7 @@ a, button {
 
 .shop{
   padding-top: 100px;
+  display: none !important;
 }
 
 .shop-title{
@@ -195,12 +196,8 @@ a, button {
   padding-top: 22px;
 }
 .info-str__text-text{
-  max-width: 720px;
-  padding-left: 200px;
-}
-.info-str__text-img{
-  height: 726px;
-  padding-left: 109px;
+  max-width: 696px;
+  margin-right: 60px;
 }
 
   /* Contact styles */
@@ -362,6 +359,13 @@ a, button {
   padding-left: 10px;
 }
 
+
+/* .shop, .banner{
+  display: none !important;
+} */
+
+/* media */
+
 @media screen and (max-width: 1440px) {
   .banner__inner, .banner__inner-imgblock{
     width: 960px;
@@ -402,15 +406,16 @@ a, button {
   }
   .info-str__text-img {
     height: 470px;
-    padding-right: 214px;
 }
   .info-str__text-img img{
     height: 470px;
   }
+  .info-str__text-text {
+    max-width: 436px;
+    margin-right: 60px;
+  }
 }
 
 @media screen and (max-width: 1440px) {
-  .info-str__text-text {
-    padding-left: 65px;
-  }
+
 }
