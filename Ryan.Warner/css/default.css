@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+
+html{
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  text-decoration: none;
+}
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+  font-family: inherit;
+  text-decoration: inherit;
+}
+ol{
+  list-style: none;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+:root{
+  --main-font: 'Jost', sans-serif;
+}
