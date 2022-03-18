@@ -14,6 +14,7 @@
 
 html{
   background: var(--color-blue10);
+  overflow-x: hidden;
 }
 
  /* *,
@@ -223,10 +224,11 @@ p{
   grid-gap: 15px 20px;
 }
 .project__item{
-  height: 262px;
+  height: auto;
+  max-height: 450px;
   background: #1C2C35;
   border-radius: 8px;
-  padding: 32px 25px;
+  padding: 32px 25px 80px;
   position: relative;
 }
 .project-name{
@@ -301,6 +303,7 @@ p{
 .footer-social{
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 .footer-social li + li{
   padding-left: 30px;
@@ -361,6 +364,15 @@ p{
   color: var(--color-blue60);
 }
 
+.snippets_item{
+  background-color: var(--color-blue30);
+  color: var(--color-text10);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.snippets_item + .snippets_item{
+  margin-top: 15px;
+}
 
 /*  */
 /*  */
@@ -373,9 +385,6 @@ p{
   }
   .project__item:nth-child(3){
     width: 220px;
-  }
-  .project__item{
-    height: 300px;
   }
 }
 
@@ -419,9 +428,6 @@ p{
   }
   .menu-header{
     display: none;
-  }
-  .project__item{
-    height: 350px;
   }
 }
 
@@ -470,5 +476,22 @@ p{
   .footer-copy p{
     font-size: 11px;
     line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .ask-desc{
+    width: 200px;
+  }
+  .footer__inner{
+    height: 120px;
+  }
+}
+@media screen and (max-width: 230px) {
+  .ask-desc{
+    width: 170px;
+  }
+  .footer__inner{
+    height: 150px;
   }
 }
