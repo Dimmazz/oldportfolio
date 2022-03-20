@@ -219,11 +219,13 @@ a {
 
 .delivery {
   background-color: #fff;
+  padding: 10px 0;
 }
 
 .delivery__inner {
   height: 340px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -236,6 +238,11 @@ a {
   height: 200px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
   border-radius: 7px;
+}
+
+.delivery__box + .delivery__box{
+  /* margin: 5px 0 0 10px; */
+  margin: auto;
 }
 
 .delivery__box-img {
@@ -638,6 +645,12 @@ a {
 }
 .footer-email__ico li + li{
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1266px) {
+  .delivery__inner {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
