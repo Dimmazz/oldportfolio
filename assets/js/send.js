@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $("#consultation_form").submit(function() {
+  $("#consultation__form").submit(function() {
 
       $.ajax({
        type: "POST",
@@ -9,7 +9,7 @@ $(document).ready(function() {
       }).done(function() {
           $(this).find("input").val("");
           $('.overlay_thanks, #thanks').fadeIn('slow');
-          $("#consultation_form").trigger("reset");
+          $("#consultation__form").trigger("reset");
 });
   return false;
 });

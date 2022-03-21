@@ -122,15 +122,17 @@ button, textarea, input {
 .header__btn {
   color: #000000;
   font-size: 1.2em;
-  background-color: #bb86fc;
+  /* background-color: #bb86fc; */
+  background-color: #4CB946;
   padding: 10px 20px;
-  border-radius: 15px;
+  border-radius: 8px;
   transition: 0.4s;
   cursor: pointer;
 }
 
 .header__btn:hover {
-  background-color: #c597fd;
+  background-color: #69B965;
+  /* background-color: #c597fd; */
 }
 
 section {
@@ -183,7 +185,7 @@ section {
 .photo__block {
   background: linear-gradient(10deg, #177214, #022401, #09a303);
   border-radius: 10px;
-  border: 2px solid #291ec7;
+  border: .5px solid #222222;
   width: 300px;
   padding: 10px 5px;;
 }
