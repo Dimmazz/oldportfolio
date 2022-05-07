@@ -1,4 +1,4 @@
-# PORTFOLIO OF MAZUSAD
+# PORTFOLIO OF DIMMAZZ
 
 **Junior Front-end developer.** 
 [***View portfolio***](https://dimmazz.github.io/portfolio/)
